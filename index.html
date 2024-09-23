@@ -58,10 +58,33 @@
                         or small, makes difference. Please join us in supporting the relief efforts and making a
                         positive
                         impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Type here" class="input input-bordered w-[100%]" />
+                    <input id="amount-input" type="text" placeholder="Type here"
+                        class="input input-bordered w-[100%]" />
                     <div class="pt-5">
-                        <button class="bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
+                        <button id="btn-donate" onclick="my_modal_3.showModal()"
+                            class=" bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
                             Now</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle ">
+                            <div class="modal-box">
+                                <h3 class="text-3xl font-bold text-black flex justify-center items-center">Congrates!
+                                </h3>
+                                <div class="flex justify-center items-center mt-4">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4 flex justify-center items-center text-black font-semibold mt-2">You Have
+                                    Donated for
+                                    Humankind</p>
+                                <p class="text-2xl font-bold text-black flex justify-center items-center">Successfully
+                                </p>
+                                <div class="modal-action items-center justify-center flex">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn ">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
@@ -86,8 +109,30 @@
                         today to assist those in urgent need.</p>
                     <input type="text" placeholder="Type here" class="input input-bordered w-[100%]" />
                     <div class="pt-5">
-                        <button class="bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
+                        <button id="btn-donate" onclick="my_modal_4.showModal()"
+                            class=" bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
                             Now</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle ">
+                            <div class="modal-box">
+                                <h3 class="text-3xl font-bold text-black flex justify-center items-center">Congrates!
+                                </h3>
+                                <div class="flex justify-center items-center mt-4">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4 flex justify-center items-center text-black font-semibold mt-2">You Have
+                                    Donated for
+                                    Humankind</p>
+                                <p class="text-2xl font-bold text-black flex justify-center items-center">Successfully
+                                </p>
+                                <div class="modal-action items-center justify-center flex">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn ">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
@@ -113,16 +158,40 @@
                         time of need.</p>
                     <input type="text" placeholder="Type here" class="input input-bordered w-[100%]" />
                     <div class="pt-5">
-                        <button class="bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
+                        <button id="btn-donate" onclick="my_modal_5.showModal()"
+                            class=" bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
                             Now</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+                            <div class="modal-box">
+                                <h3 class="text-3xl font-bold text-black flex justify-center items-center">Congrates!
+                                </h3>
+                                <div class="flex justify-center items-center mt-4">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4 flex justify-center items-center text-black font-semibold mt-2">You Have
+                                    Donated for
+                                    Humankind</p>
+                                <p class="text-2xl font-bold text-black flex justify-center items-center">Successfully
+                                </p>
+                                <div class="modal-action items-center justify-center flex">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn ">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
         </div>
-
+        <script src="./js/donate.js"></script>
     </main>
     <footer>
+        <div class="bg-[#FFEEE6]">
 
+        </div>
     </footer>
 </body>
 
