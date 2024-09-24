@@ -6,4 +6,4 @@ document.getElementById('blog-btn').addEventListener('click', function () {
 const back = document.getElementById('home-btn')
 back.addEventListener('click', function () {
     window.location.href = '../index.html'
-})
+});
