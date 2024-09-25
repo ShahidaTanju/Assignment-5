@@ -38,15 +38,14 @@
     <main>
         <!-- card-01 -->
         <div class=" container mx-auto border border-gray-200 px-8 py-6 rounded-xl w-10/12">
-            <div class="container flex mx-auto">
+            <div class="container lg:flex mx-auto ">
                 <figure>
                     <img class="w-[90%]" src="./assets/noakhali.png" alt="" />
                 </figure>
-                <div class="w-[50%] py-4 px-6">
-                    <div id="donate-amount-flood-1"
-                        class="flex border border-gray-300 w-[25%] px-2 py-2 bg-slate-300 rounded-lg mb-2">
+                <div class="lg:w-[50%] py-4 px-6">
+                    <div class="flex border border-gray-300 w-[25%] px-2 py-2 bg-slate-300 rounded-lg mb-2">
                         <img width="20" class="mr-2" src="./assets/coin.png" alt="">
-                        <p> 0 BDT</p>
+                        <p id="donate-aid"> 0 <span>BDT</p>
                     </div>
                     <h2 class="text-lg font-bold pb-4">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="font-medium text-gray-600 pb-5"> The recent floods in Noakhali have caused significant
@@ -59,44 +58,25 @@
                         or small, makes difference. Please join us in supporting the relief efforts and making a
                         positive
                         impact on the lives of those in need.</p>
-                    <input id="amount-input-1" type="text" placeholder="Type here"
+                    <input id="input-amount-flood" type="text" placeholder="Type here"
                         class="input input-bordered w-[100%]" />
                     <div class="pt-5">
-                        <button id="btn-donate-1" onclick="my_modal_3.showModal()"
+                        <button id="donate-aid-btn"
                             class=" bg-[#B4F461]  text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
                             Now</button>
                         <!-- Open the modal using ID.showModal() method -->
-                        <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle ">
-                            <div class="modal-box">
-                                <h3 class="text-3xl font-bold text-black flex justify-center items-center">Congrates!
-                                </h3>
-                                <div class="flex justify-center items-center mt-4">
-                                    <img src="./assets/coin.png" alt="">
-                                </div>
-                                <p class="py-4 flex justify-center items-center text-black font-semibold mt-2">You Have
-                                    Donated for
-                                    Humankind</p>
-                                <p class="text-2xl font-bold text-black flex justify-center items-center">Successfully
-                                </p>
-                                <div class="modal-action items-center justify-center flex">
-                                    <form method="dialog">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button class="btn ">Close Confirmation</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </dialog>
+
                     </div>
                 </div>
             </div>
         </div>
         <!-- card-02 -->
         <div class=" container mx-auto border border-gray-200 px-8 py-6 rounded-xl w-10/12 mt-7">
-            <div class="container flex mx-auto">
+            <div class="container lg:flex mx-auto">
                 <figure>
-                    <img class="w-[90%]" src="./assets/feni.png" alt="" />
+                    <img class="w-[90%] " src="./assets/feni.png" alt="" />
                 </figure>
-                <div class="w-[50%] py-4 px-6">
+                <div class="lg:w-[50%] py-4 px-6">
                     <div class="flex border border-gray-300 w-[25%] px-2 py-2 bg-slate-300 rounded-lg mb-2">
                         <img width="20" class="mr-2" src="./assets/coin.png" alt="">
                         <p>600 BDT</p>
@@ -110,41 +90,21 @@
                         today to assist those in urgent need.</p>
                     <input type="text" placeholder="Type here" class="input input-bordered w-[100%]" />
                     <div class="pt-5">
-                        <button id="btn-donate" onclick="my_modal_4.showModal()"
+                        <button id="btn-donate"
                             class=" bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
                             Now</button>
-                        <!-- Open the modal using ID.showModal() method -->
-                        <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle ">
-                            <div class="modal-box">
-                                <h3 class="text-3xl font-bold text-black flex justify-center items-center">Congrates!
-                                </h3>
-                                <div class="flex justify-center items-center mt-4">
-                                    <img src="./assets/coin.png" alt="">
-                                </div>
-                                <p class="py-4 flex justify-center items-center text-black font-semibold mt-2">You Have
-                                    Donated for
-                                    Humankind</p>
-                                <p class="text-2xl font-bold text-black flex justify-center items-center">Successfully
-                                </p>
-                                <div class="modal-action items-center justify-center flex">
-                                    <form method="dialog">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button class="btn ">Close Confirmation</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </dialog>
+
                     </div>
                 </div>
             </div>
         </div>
         <!-- card-03 -->
         <div class=" container mx-auto border border-gray-200 px-8 py-6 rounded-xl w-10/12 mt-7 mb-5">
-            <div class="container flex mx-auto">
+            <div class="container lg:flex mx-auto">
                 <figure>
                     <img class="w-[90%]" src="./assets/quota-protest.png" alt="" />
                 </figure>
-                <div class="w-[50%] py-4 px-6">
+                <div class="lg:w-[50%] py-4 px-6">
                     <div class="flex border border-gray-300 w-[25%] px-2 py-2 bg-slate-300 rounded-lg mb-2">
                         <img width="20" class="mr-2" src="./assets/coin.png" alt="">
                         <p>2400 BDT</p>
@@ -159,37 +119,38 @@
                         time of need.</p>
                     <input type="text" placeholder="Type here" class="input input-bordered w-[100%]" />
                     <div class="pt-5">
-                        <button id="btn-donate" onclick="my_modal_5.showModal()"
+                        <button id="btn-donate"
                             class=" bg-[#B4F461] text-black font-bold px-5 py-3 rounded-lg w-[100%]">Donate
                             Now</button>
-                        <!-- Open the modal using ID.showModal() method -->
-                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
-                            <div class="modal-box">
-                                <h3 class="text-3xl font-bold text-black flex justify-center items-center">Congrates!
-                                </h3>
-                                <div class="flex justify-center items-center mt-4">
-                                    <img src="./assets/coin.png" alt="">
-                                </div>
-                                <p class="py-4 flex justify-center items-center text-black font-semibold mt-2">You Have
-                                    Donated for
-                                    Humankind</p>
-                                <p class="text-2xl font-bold text-black flex justify-center items-center">Successfully
-                                </p>
-                                <div class="modal-action items-center justify-center flex">
-                                    <form method="dialog">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button class="btn ">Close Confirmation</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </dialog>
+
                     </div>
                 </div>
             </div>
         </div>
-
+        <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle ">
+            <div class="modal-box">
+                <h3 class="text-3xl font-bold text-black flex justify-center items-center">Congrates!
+                </h3>
+                <div class="flex justify-center items-center mt-4">
+                    <img src="./assets/coin.png" alt="">
+                </div>
+                <p class="py-4 flex justify-center items-center text-black font-semibold mt-2">You Have
+                    Donated for
+                    Humankind</p>
+                <p class="text-2xl font-bold text-black flex justify-center items-center">Successfully
+                </p>
+                <div class="modal-action items-center justify-center flex">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn ">Close Confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
+    <script src="./js/donate.js"></script>
     <script src="./js/blog.js"></script>
+
 </body>
 
 </html>
