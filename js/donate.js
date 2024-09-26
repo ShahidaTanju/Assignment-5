@@ -24,6 +24,14 @@ document.getElementById('donate-aid-btn').addEventListener('click', function (ev
     const totalDonate = (inputAmountFlood + donateAid);
 
     document.getElementById('donate-aid').innerText = totalDonate;
+
+    // Creating a div for history of donation
+
+    const div = document.createElement('div')
+    div.innerHTML = `<p class="text-l py-3 border px-4 rounded-lg text-gray-500">${inputAmountFlood.toFixed(2)} Taka is Donated for Flood at Noakhali,Bangladesh </br> ${new Date().toLocaleDateString()} time: ${new Date().toLocaleTimeString()}</p> `;
+
+    const historySection = document.getElementById('history_part').appendChild(div);
+
 });
 
 // Donate for flood 02 :
@@ -52,6 +60,14 @@ document.getElementById('donate-aid-btn-2').addEventListener('click', function (
     const totalDonate2 = (inputAmountFlood2 + donateAid2);
 
     document.getElementById('donate-aid-2').innerText = totalDonate2;
+
+    // Creating a div for history of donation
+
+    const div = document.createElement('div')
+    div.innerHTML = `<p class="text-l py-3 border px-4 rounded-lg text-gray-500">${inputAmountFlood2.toFixed(2)} Taka is Donated for Flood at Feni,Bangladesh </br> ${new Date().toLocaleDateString()} time: ${new Date().toLocaleTimeString()}</p> `;
+
+    const historySection = document.getElementById('history_part').appendChild(div);
+
 });
 
 // Donate for Quota :
@@ -80,5 +96,14 @@ document.getElementById('donate-aid-btn-3').addEventListener('click', function (
     const totalDonate3 = (inputAmountQuota + donateAid3);
 
     document.getElementById('donate-aid-3').innerText = totalDonate3;
+
+
+    // Creating a div for history of donation
+
+    const div = document.createElement('div')
+    div.innerHTML = `<p class="text-l py-3 border px-4 rounded-lg text-gray-500">${inputAmountQuota.toFixed(2)} Taka is Donated for Quota Movement,Bangladesh </br> ${new Date().toLocaleDateString()} time: ${new Date().toLocaleTimeString()}</p> `;
+
+    const historySection = document.getElementById('history_part').appendChild(div);
+
 });
 
